@@ -1,0 +1,39 @@
+.navbar{
+  width: 100%;
+  height: calc(100vh - 6rem);
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  .menu-list{
+    padding: 2rem 0 0 0rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    .menu-list-item{
+      transition: all .1s ease;
+      padding: 2rem 2rem 2rem 3.5rem;
+      //width: 18rem;
+      display: flex;
+      column-gap: 2rem;
+      .icon{
+        width: 1.5rem;
+      }
+      &:hover{
+        background-color: #395886;
+        //border-radius: 1rem;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+  hr{
+    width: 100%;
+    height: .1rem;
+    background-color: black;
+    border: none;
+  }
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}

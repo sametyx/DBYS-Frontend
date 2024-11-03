@@ -1,0 +1,9 @@
+.navbar-content{
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: auto;
+  @media screen and (max-width: 750px) {
+    grid-template-columns: auto ;
+  }
+}
+

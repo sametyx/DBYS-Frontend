@@ -1,0 +1,53 @@
+.create-program{
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+  .card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    .program-selector{
+      transition: .1s ease all;
+      text-align: center;
+      padding: 2rem 4rem;
+      border: .1rem dotted black;
+      font-weight: 300;
+      &:hover{
+        background-color: #2c2c2c;
+        color: white;
+        cursor: pointer;
+        border: .1rem dotted white;
+      }
+    }
+    .selected-program{
+      font-weight: 700;
+    }
+  }
+  .options{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    span{
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    .date-pick{
+      font-family: "Rubik", sans-serif;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+}

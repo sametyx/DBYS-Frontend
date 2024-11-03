@@ -1,0 +1,76 @@
+header{
+  user-select: none;
+  position: sticky;
+  top: 1rem;
+  z-index: 5;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+  .back{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    .icon{
+      padding: 0  0 0 1rem;
+      font-size: 2.6rem;
+    }
+    span{
+      white-space: nowrap;
+      border-radius: 0.5rem;
+      transition: .3s ease all;
+      opacity: 0;
+      width: 0;
+      background-color: black;
+      color: white;
+      font-size: 1.4rem;
+      padding: 0.5rem;
+    }
+    &:hover{
+      cursor: pointer;
+      span{
+        opacity: 1;
+        width: 100%;
+      }
+    }
+    &:active{
+      color: #4b4b4b;
+    }
+  }
+  .logo{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    margin-left: 7rem;
+    img{
+      height: 5rem;
+
+    }
+    .title-subtitle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .title{
+        font-size: 2rem;
+      }
+      .subtitle{
+        font-size: 1.4rem;
+        font-weight: 200;
+      }
+    }
+
+  }
+  .profile{
+    font-family: "Reddit Sans", sans-serif;
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+}

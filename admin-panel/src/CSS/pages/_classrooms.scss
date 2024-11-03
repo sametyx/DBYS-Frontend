@@ -1,0 +1,36 @@
+.classrooms{
+  padding: 4rem 3rem;
+  .classrooms-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    .add-table{
+      display: flex;
+      flex-direction: column;
+      .add{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        form{
+          display: flex;
+          align-items: flex-end;
+          column-gap: 2rem;
+          .input-group{
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.4rem;
+            span{
+            }
+          }
+        }
+      }
+    }
+    .classrooms-table{
+      .classrooms-table-wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+  }
+}

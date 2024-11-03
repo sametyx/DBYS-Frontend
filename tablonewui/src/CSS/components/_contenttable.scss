@@ -1,0 +1,11 @@
+.content-table{
+  transition: .2s ease all;
+  background-color: #ffffff;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  overflow: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

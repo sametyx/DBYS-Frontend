@@ -1,0 +1,37 @@
+.btn{
+  transition: .1s ease all;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: white;
+  &:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: .1rem solid black;
+  }
+}
+
+.btn-md{
+  width: auto;
+  padding: 1rem 4.5rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+.btn-sm{
+  width: auto;
+  padding: .5rem 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.btn-blue{
+  background-color: #568ee0;
+}
+.btn-red{
+  background-color: #e05656;
+}
+.btn-green{
+  background-color: #7aff85;
+  color: black;
+}

@@ -1,0 +1,25 @@
+.status-bar{
+  position: sticky;
+  width: calc(100% - 2rem);
+  background-color: white;
+  bottom: -.1rem;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding:  1rem;
+  .warnings{
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    background-color: #ffe645;
+    .icon{
+      font-size: 1.5rem;
+    }
+    .num{
+      font-size: 1.5rem;
+    }
+  }
+}

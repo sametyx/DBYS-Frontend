@@ -1,0 +1,29 @@
+header{
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+  .logo{
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    img{
+      width: 6rem;
+    }
+    .title-desc{
+      font-family: 'Roboto Condensed', sans-serif;
+      display: flex;
+      flex-direction: column;
+      .uni-title{
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      .desc{
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

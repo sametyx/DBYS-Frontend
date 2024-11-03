@@ -1,0 +1,44 @@
+.btn{
+  transition: .1s ease all;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.btn-md{
+  font-size: 1.6rem;
+}
+
+.btn-green{
+  background-color: #27ea00;
+  color: white;
+  &:hover{
+    cursor: pointer;
+    background-color: #20bd00;
+
+  }
+}
+
+.btn-blue{
+  background-color: #004aea;
+  color: white;
+  &:hover{
+    cursor: pointer;
+    background-color: #002cbd;
+
+  }
+}
+
+.btn-red{
+  background-color: #ea0000;
+  color: white;
+  &:hover{
+    cursor: pointer;
+    background-color: #bd0000;
+
+  }
+}

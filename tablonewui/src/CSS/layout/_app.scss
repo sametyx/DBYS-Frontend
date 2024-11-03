@@ -1,0 +1,21 @@
+.app-wrapper{
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 18fr 0rem;
+  grid-template-rows: auto;
+  column-gap: 2rem;
+  .tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .app{
+    padding-top: 1rem;
+    grid-column: 2 / 2;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2rem;
+    grid-template-rows: 6rem auto;
+
+  }
+}

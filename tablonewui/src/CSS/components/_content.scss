@@ -1,0 +1,27 @@
+.content{
+  background-color: white;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+
+  .content-wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5rem 2rem minmax(0, calc(100vh - 20rem));
+    row-gap: 1rem;
+    font-family: "Kanit", sans-serif;
+  }
+  .warning{
+    color: gray;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    .icon{
+      font-size: 15rem;
+    }
+  }
+}

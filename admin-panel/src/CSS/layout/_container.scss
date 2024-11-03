@@ -1,0 +1,26 @@
+.page-container{
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.page-wrapper-container{
+  height: 100%;
+}
+
+.selector{
+  transition: .1s ease all;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+  text-align: center;
+  vertical-align: center;
+  border: .1rem dashed gray;
+  &:hover{
+    cursor: pointer;
+    background-color: #4D4D4D;
+    color: white;
+  }
+  &:active{
+    background-color: #3d3d3d;
+  }
+}

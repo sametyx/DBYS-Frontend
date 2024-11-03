@@ -1,0 +1,160 @@
+.filters{
+  display: grid;
+  grid-template-rows: 10fr;
+  grid-template-columns: auto;
+  .chest{
+    background-color: #dadada;
+    display: grid;
+    grid-template-columns: 5fr 10fr;
+    grid-template-rows: auto;
+    .filters-navbar{
+      padding: 1rem;
+      .filters-navbar-wrapper{
+        ul{
+          background-color: white;
+          border-radius: 0.5rem;
+          li{
+            transition: .2s ease all;
+            padding: 0 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3.5rem;
+            border-bottom: .1rem solid #c7c7c7;
+            &.active{
+              background-color: #b8e2ff;
+            }
+            .name{
+              font-weight: 500;
+              font-family: "Rubik", sans-serif;
+              display: flex;
+              column-gap: 1rem;
+              align-items: center;
+              font-size: 1.6rem;
+              .icon{
+                width: 2rem;
+                color: gray;
+              }
+            }
+            .arrow{
+              color: #359eed;
+              font-size: 1.2rem;
+            }
+
+            &:hover{
+              cursor: pointer;
+              background-color: #e5f3fd;
+              .name,.icon{
+                color: #2295eb;
+              }
+            }
+            &:last-child{
+              border-bottom: none;
+              border-bottom-left-radius: 0.5rem;
+              border-bottom-right-radius: 0.5rem;
+            }
+            &:first-child{
+              border-top-left-radius: 0.5rem;
+              border-top-right-radius: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .filters-content{
+      padding: 1rem 1rem 1rem 0rem;
+      .filters-content-wrapper{
+        height: 100%;
+        border-radius: 0.5rem;
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4rem 4rem 5fr;
+        row-gap: 0.5rem;
+        .head{
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          padding: 0 1rem;
+          border-bottom: .1rem solid gray;
+          font-weight: 700;
+        }
+        .search{
+          padding: 0 1rem;
+          display: flex;
+          align-items: center;
+          .input{
+            display: flex;
+            align-items: center;
+            .icon{
+              font-size: 1.2rem;
+              position: absolute;
+              padding: 0 0 0 0.5rem;
+            }
+            input{
+              font-family: "Rubik", sans-serif;
+              padding: 0.5rem 1rem 0.5rem 2rem;
+              border-radius: 0.5rem;
+              outline: none;
+              border: .1rem solid gray;
+            }
+          }
+
+        }
+        .lists{
+          display: grid;
+          grid-template-columns: 10fr 1fr 10fr;
+          column-gap: 0.5rem;
+          grid-template-rows: 30rem;
+          padding: 1rem;
+          .list{
+            border-radius: 0.5rem;
+            padding: .7rem;
+            border: 1px solid #c2c2c2;
+            .list-head{
+              font-size: 1.4rem;
+              color: #25acd9;
+              display: flex;
+              column-gap: .5rem;
+            }
+            ul{
+              padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+              li{
+                display: flex;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: 300;
+              }
+            }
+          }
+          .buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 1.5rem;
+            button{
+              border-radius: .5rem;
+              padding: .5rem 0;
+              transition: .2s ease all;
+              outline: none;
+              border: none;
+              background: none;
+              &:hover{
+                cursor: pointer;
+                background: #dadada;
+              }
+              &:active{
+                background: #8d8d8d;
+
+              }
+              .icon{
+                width: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+//Çerçeve
+$border: 0.1rem solid #cccccc;
+//ilk satir ve sutun
+$row-and-column: #38a9e5;
+
+
+
+/*
+table{
+  font-size: 1.6rem;
+  thead{
+    tr{
+      th{
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: $border;
+        border-right: $border;
+        border-top: $border;
+        width: 15rem;
+        height: 2rem;
+        background-color: $row-and-column;
+        color: #ffffff;
+        &:first-child{
+          border-left: $border;
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{
+        border-bottom: $border;
+        border-right: $border;
+        background-color: #e6f7ff;
+        height: 2rem;
+        &:first-child{
+          color: #ffffff;
+          text-align: center;
+          vertical-align: middle;
+          border-left: $border !important;
+          background-color: $row-and-column;
+        }
+      }
+    }
+  }
+}
+*/
+table{
+  user-select: none;
+  border-spacing: 0.3rem;
+  border-collapse: separate;
+  font-size: 1.6rem;
+  thead{
+    tr{
+      th{
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        min-width: 10rem;
+        height: 3rem;
+        background-color: $row-and-column;
+        color: #ffffff;
+        //border-radius: 0.5rem;
+        .classroom-info{
+          display: grid;
+          grid-template-rows: 1fr auto;
+          grid-template-columns: auto;
+          .name{
+            background-color: #afebff;
+          }
+          .info{
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{
+        transition: .1s ease-in-out all;
+        text-align: center;
+        vertical-align: middle;
+        //border-radius: 1rem;
+        background-color: #d3effc;
+        height: 3rem;
+        &:first-child{
+          color: #ffffff;
+          text-align: center;
+          vertical-align: middle;
+          //border-radius: 0.5rem;
+          background-color: $row-and-column;
+          &:hover{
+            transform: none;
+            background-color: $row-and-column;
+            cursor: initial;
+          }
+        }
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.15);
+          background-color: #c1ebff;
+        }
+        &:active{
+          background-color: #333333;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.faculty-chooser{
+  padding: 0.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background-color: white;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-rows: 5rem 2fr 15fr 1fr;
+  .header{
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    .logo{
+      display: flex;
+      column-gap: 1rem;
+      align-items: center;
+      img{
+        height: 5rem;
+      }
+      .title-subtitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .title{
+          font-size: 2rem;
+        }
+        .subtitle{
+          font-size: 1.4rem;
+          font-weight: 200;
+        }
+      }
+
+    }
+    .info{
+      font-family: "Reddit Sans", sans-serif;
+      font-size: 2rem;
+      margin-right: 4rem;
+    }
+  }
+  .message{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title{
+      font-size: 10rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #5f92ff, #fe7bb2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+    p{
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+.faculties{
+  margin: 10rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+  .card {
+    user-select: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    &-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    &-title {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      margin: 0;
+      padding: 15px;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+  }
+
+}
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+}

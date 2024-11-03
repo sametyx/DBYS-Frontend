@@ -1,0 +1,43 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  max-width: 100vw !important;
+  background-color: #eaeaea;
+  scrollbar-width: thin; // Firefox için ince scrollbar
+  scrollbar-color: #888 #f0f0f0; // Firefox için scrollbar renkleri
+
+  // WebKit tarayıcıları (Chrome, Safari, Edge) için
+  &::-webkit-scrollbar {
+    width: 12px; // Scrollbar genişliği
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f0f0f0; // Scrollbar arka plan rengi
+    border-radius: 10px; // Scrollbar köşe yuvarlama
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888; // Scrollbar rengi
+    border-radius: 10px; // Scrollbar köşe yuvarlama
+    border: 3px solid #f0f0f0; // Scrollbar dış kenarı
+  }
+
+  // Scrollbar hover efekti
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555; // Hover sırasında scrollbar rengi
+  }
+  &::-webkit-scrollbar-button {
+    background: none; // Buton arka planını kaldır
+    height: 0;
+    width: 0;
+    display: none; // Butonları tamamen gizle
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent; // Scrollbar köşesini şeffaf yap
+  }
+}
